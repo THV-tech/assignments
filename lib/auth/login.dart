@@ -30,10 +30,12 @@ class _LoginScreenState extends State<LoginScreen> {
             TextField(
               controller: emailController,
                decoration: InputDecoration(
+                 border: OutlineInputBorder(),
                 labelText: 'Email'
                 ),
                 ),
-            TextField(controller: passwordController, decoration: InputDecoration(labelText: 'Password'), obscureText: true),
+                SizedBox(height: 10),
+            TextField(controller: passwordController, decoration: InputDecoration( border: OutlineInputBorder(),labelText: 'Password'), obscureText: true),
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
